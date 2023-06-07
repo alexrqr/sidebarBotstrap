@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Bootstrap</title>
+
+    <!--styles-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!--aside-->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">ALEXR</a>
+                </div>
+                <!--Sidebar navegation-->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Tool y Components
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class='bx bx-list-ul pe-2'></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expandes="false" aria-controls="pages">
+                            <i class='bx bx-file pe-2'></i>
+                            Pages
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collpase" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Ecommerce</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Cryptom</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class='bx bx-slider-alt pe-2'></i>
+                            Dashboard
+                        </a>
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collpase" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Multi level NAV
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
+                            aria-expanded="false" aria-controls="multi">
+                            <i class='bx bx-slider-alt pe-2'></i>
+                            Muti level links
+                        </a>
+                        <ul id="multi" class="sidebar-dropdown list-unstyled collpase" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                    <i class='bx bx-slider-alt pe-2'></i>
+                                    two links
+                                </a>
+                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collpase pl-3">
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link pl-5">Link 1</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link pl-5">Link 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#profile"
+                            aria-expanded="flase" aria-controls="profile">
+                            <i class='bx bx-slider-alt pe-2'></i>
+                            PROFILE
+                        </a>
+                        <ul id="profile" class="sidebar-dropdown list-unstyled collpase" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">name</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <!--Main component-->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" type="button" data-bs-theme="dark">
+                    <span class="bx bx-menu"></span>
+                </button>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3>BOOOOB</h3>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
